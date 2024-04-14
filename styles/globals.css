@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.custom-shape-container {
+  position: relative;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.custom-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%; /* Adjust width to create the desired shape */
+  height: 200%; /* Adjust height to create the desired shape */
+  background-color: blue; /* Change color as needed */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Adjust polygon points to create your custom shape */
+}
+

@@ -1,9 +1,14 @@
-import Image from 'next/image'
+import { Navbar, Footer } from "../Components";
+import { Hero, About, Technology } from "../sections";
 
-export default function Home() {
-  return (
-    <h1 className='font-extrabold text-6xl'>
-      hello world
-    </h1>
-  )
-}
+const Page = () => (
+  <div className="overflow-hidden bg-[#EEF5FF]">
+    <Navbar />
+    <Hero />
+    <About />
+    <Technology />
+    {/* <Footer /> */}
+  </div>
+);
+
+export default Page;
