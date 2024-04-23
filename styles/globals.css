@@ -17,21 +17,5 @@
   }
 }
 
-.custom-shape-container {
-  position: relative;
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  overflow: hidden;
-}
 
-.custom-shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200%; /* Adjust width to create the desired shape */
-  height: 200%; /* Adjust height to create the desired shape */
-  background-color: blue; /* Change color as needed */
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Adjust polygon points to create your custom shape */
-}
 

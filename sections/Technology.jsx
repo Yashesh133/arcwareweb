@@ -2,11 +2,12 @@
 
 import React from 'react'
 import styles from "../styles"
-import '../styles/globals.css'
-import { TitleText, TypingText } from "../components/CustomTexts";
+import { SubTitleText, TitleText, TypingText } from "../components/CustomTexts";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion"
-import Image from 'next/image';
+import { Frameworks, MobileFrameworks, WebFrameworks } from '../constants';
+
+import FrameworkCard from '../Components/FrameworkCard';
 
 const Technology = () => {
     return (
@@ -26,15 +27,37 @@ const Technology = () => {
                     Frameworks
                 </>} />
             </motion.div>
-            <div className='relative'>
-                <Image src="/hexagonshape.svg" alt="Icon" width={150} height={100} />
-                <h2 className='absolute top-[45%] left-[48px]'>
-                    python
-                </h2>
-            </div>
-            <div className="custom-shape-container">
-                <div className="custom-shape"></div>
-            </div>
+            <motion.div className='flex justify-center'>
+                <SubTitleText title={<>
+                    Web Frameworks
+                </>} />
+            </motion.div>
+            <motion.div className='flex justify-center items-center text-center'>
+                {WebFrameworks.map((framework, index) => (
+                    <FrameworkCard
+                        key={`framework-${index}`}
+                        image={framework.image}
+                        name={framework.name}
+                        index={index + 1}
+                    />
+                ))}
+            </motion.div>
+            {/* mobile framework */}
+            <motion.div className='flex justify-center'>
+                <SubTitleText title={<>
+                    Mobile Frameworks
+                </>} />
+            </motion.div>
+            <motion.div className='flex justify-center items-center text-center'>
+                {MobileFrameworks.map((framework, index) => (
+                    <FrameworkCard
+                        key={`framework-${index}`}
+                        image={framework.image}
+                        name={framework.name}
+                        index={index + 1}
+                    />
+                ))}
+            </motion.div>
         </section>
     )
 }
