@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { TitleText, TypingText } from "./CustomTexts";
+import { TypingText, TitleText, SubText } from "./CustomTexts";
+import FrameworkCard from "./FrameworkCard";
 
-export { Navbar, Footer, TitleText, TypingText };
+export { Navbar, Footer, TypingText, TitleText, SubText, FrameworkCard };

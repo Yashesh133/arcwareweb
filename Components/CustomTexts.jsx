@@ -1,4 +1,5 @@
 'use client'
+
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../utils/motion';
 
@@ -26,7 +27,7 @@ export const TitleText = ({ title, textStyles }) => (
   </motion.h2>
 );
 
-export const SubTitleText = ({ title, textStyles }) => (
+export const SubText = ({ title, textStyles }) => (
   <motion.h2
     variants={textVariant2}
     initial="hidden"

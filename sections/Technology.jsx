@@ -2,12 +2,10 @@
 
 import React from 'react'
 import styles from "../styles"
-import { SubTitleText, TitleText, TypingText } from "../components/CustomTexts";
+import { TypingText, SubText, TitleText, FrameworkCard } from '../Components';
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion"
-import { Frameworks, MobileFrameworks, WebFrameworks } from '../constants';
-
-import FrameworkCard from '../Components/FrameworkCard';
+import { MobileFrameworks, WebFrameworks } from '../constants';
 
 const Technology = () => {
     return (
@@ -28,7 +26,7 @@ const Technology = () => {
                 </>} />
             </motion.div>
             <motion.div className='flex justify-center'>
-                <SubTitleText title={<>
+                <SubText title={<>
                     Web Frameworks
                 </>} />
             </motion.div>
@@ -44,7 +42,7 @@ const Technology = () => {
             </motion.div>
             {/* mobile framework */}
             <motion.div className='flex justify-center'>
-                <SubTitleText title={<>
+                <SubText title={<>
                     Mobile Frameworks
                 </>} />
             </motion.div>
