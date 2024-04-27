@@ -8,8 +8,8 @@ const FrameworkCard = ({ image, name }) => {
         <Image className='h-24 w-auto m-auto object-cover'
           src={image}
           alt={name}
-          height={1200}
-          width={1200} />
+          height={100}
+          width={100} />
         <h2 className='my-2 font-semibold text-center text-2xl'>{name}</h2>
       </div>
     </div>
