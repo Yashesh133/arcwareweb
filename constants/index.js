@@ -18,39 +18,51 @@ export const MenuList = [
 
 export const WebFrameworks = [
   {
-    image: "/pythonicon.png",
-    name: "Python",
+    image: "/html.svg",
+    name: "HTML & CSS",
   },
   {
-    image: "/React.png",
+    image: "/react.svg",
     name: "React js",
   },
   {
-    image: "/Angular.png",
+    image: "/angular.svg",
     name: "Angular js",
   },
   {
-    image: "/Vue.jpg",
+    image: "/vue.svg",
     name: "Vue js",
   },
   {
-    image: "/Laravel.png",
-    name: "Laravel js",
+    image: "/javascript-logo.svg",
+    name: "JavaScript",
+  },
+  {
+    image: "/typescript-logo.svg",
+    name: "TypeScript",
   },
 ];
 
 export const MobileFrameworks = [
   {
-    image: "/Android.png",
+    image: "/ios1.svg",
+    name: "IOS",
+  },
+  {
+    image: "/android1.svg",
     name: "Android",
   },
   {
-    image: "/Flutterpng.png",
+    image: "/flutter.svg",
     name: "Flutter",
   },
   {
-    image: "/Kotlin.png",
+    image: "/kotlin.svg",
     name: "Kotlin",
+  },
+  {
+    image: "/react-native.svg",
+    name: "React Native",
   },
 ]
 
