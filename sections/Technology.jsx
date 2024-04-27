@@ -30,7 +30,7 @@ const Technology = () => {
                     Web Frameworks
                 </>} />
             </motion.div>
-            <motion.div className='flex text-center gap-3'>
+            <motion.div className='flex justify-center text-center gap-3'>
                 {WebFrameworks.map((framework, index) => (
                     <FrameworkCard
                         key={`framework-${index}`}
