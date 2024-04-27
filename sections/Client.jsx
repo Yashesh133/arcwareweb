@@ -16,7 +16,7 @@ import { Testimonials } from '../constants';
 const Client = () => {
   return (
     <>
-      <section className="relative my-12 mx-36">
+      <section className="relative my-12 mx-36 ">
         <div className="gradient-02 z-0" />
         <motion.div
           variants={staggerContainer}
@@ -27,29 +27,32 @@ const Client = () => {
         >
           <TypingText title="| Happy Client" textStyles="text-center" />
         </motion.div>
-        <motion.div className='flex justify-center'>
+        <motion.div className='flex justify-center mb-14'>
           <TitleText title={<>
             Testimonial
           </>} />
         </motion.div>
         <div>
           <Swiper
+            className='mt-24'
             spaceBetween={30}
             slidesPerView={2}
             autoplay={{ delay: 2500 }}
             loop
+            parallax
           >
-            {/* take it okk important kem lage ? ama na lage talage ala  take it  a bey baju dekhay e kem remove karvu te je slider use karu ceh ana doc ma hase proper a apelu che ???? 1 min position thi nay thay kem responsive ma problem avse */}
             {Testimonials.map((testimonial, index) => (
               <SwiperSlide key={`testimonial-${index}`}>
-                <div className='bg-white p-3 text-center flex justify-center flex-col rounded-3x'>
-                  <div className='absolute top-[-50%] left-[40%]'>
-                    <img className='h-[100px] w-[100px] m-auto rounded-full relative z-[1111]'
+                <div className='bg-white p-8 text-center flex justify-center flex-col rounded-3xl'>
+                  <div className='absolute top-[-30%] '>
+                    <img className='h-[150px] w-[150px] m-auto rounded-full'
                       src={testimonial.image}
                       alt={testimonial.clientName} />
                   </div>
-                  <h2 className='font-bold my-4'>{testimonial.clientName}</h2>
-                  <p>{testimonial.paragraph}</p>
+                  <div className='my-6'>
+                    <h2 className='font-bold mt-8'>{testimonial.clientName}</h2>
+                    <p>{testimonial.paragraph}</p>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

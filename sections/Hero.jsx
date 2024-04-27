@@ -5,6 +5,7 @@ import styles from "../styles"
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion"
 import { TitleText, TypingText } from '../Components';
+import Image from 'next/image';
 
 
 const Hero = () => {
@@ -49,11 +50,12 @@ const Hero = () => {
                     variants={fadeIn('left', 'tween', 0.2, 1)}
                     className={`flex-1 ${styles.flexCenter}`}
                 >
-                    <img
-                        src="hero.png"
+                    <Image
+                        src="/hero.png"
                         alt="hero image"
-                        style={{ width: '70%' }}
-                        className="object-contain"
+                        width={1200}
+                        height={1200}
+                        className="object-contain w-[70%]"
                     />
                 </motion.div>
             </motion.div>
