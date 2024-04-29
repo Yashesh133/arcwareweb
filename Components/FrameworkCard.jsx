@@ -3,7 +3,7 @@ import React from 'react';
 
 const FrameworkCard = ({ image, name }) => {
   return (
-    <div className='h-50 w-60 flex items-center flex-col bg-white p-5 m-5 rounded-[40px] transition-transform duration-300 hover:scale-110'>
+    <div className='flex items-center justify-center flex-col bg-white p-5 m-5 rounded-[40px] transition-transform duration-300 hover:scale-110'>
       <Image className=''
         src={image}
         alt={name}

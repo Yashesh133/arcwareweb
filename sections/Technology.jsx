@@ -30,7 +30,7 @@ const Technology = () => {
                     Web Frameworks
                 </>} />
             </motion.div>
-            <motion.div className='flex justify-center text-center gap-3'>
+            <motion.div className='grid grid-cols-6 text-center gap-5'>
                 {WebFrameworks.map((framework, index) => (
                     <FrameworkCard
                         key={`framework-${index}`}
@@ -46,7 +46,7 @@ const Technology = () => {
                     Mobile Frameworks
                 </>} />
             </motion.div>
-            <motion.div className='flex justify-center items-center text-center'>
+            <motion.div className='grid grid-cols-5 text-center gap-5'>
                 {MobileFrameworks.map((framework, index) => (
                     <FrameworkCard
                         key={`framework-${index}`}
